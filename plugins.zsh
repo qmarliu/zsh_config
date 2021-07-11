@@ -1,3 +1,11 @@
+plugins=(
+    git
+    sudo
+    command-not-found
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+)
+
 source "${HOME}/.zgen/zgen.zsh"
 # if the init scipt doesn't exist
 if ! zgen saved; then
@@ -11,7 +19,6 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/command-not-found
     zgen load zsh-users/zsh-syntax-highlighting
     zgen load zsh-users/zsh-autosuggestions
-    zgen load /path/to/super-secret-private-plugin
     zgen load fdw/ranger_autojump
 
     # bulk load
@@ -33,6 +40,5 @@ fi
 
 [[ -s /home/liul/.autojump/etc/profile.d/autojump.sh ]] && source /home/liul/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
-bindkey -v
 
 
