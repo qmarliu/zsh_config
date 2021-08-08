@@ -5,4 +5,7 @@ alias vim='nvim'
 alias vi='nvim'
 alias nv='nvim'
 alias l='ls -la'
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias pon='export https_proxy=http://127.0.0.1:2340;export http_proxy=http://127.0.0.1:2340;export all_proxy=socks5://127.0.0.1:1080'
+alias poff='export https_proxy=;export all_proxy='
 
