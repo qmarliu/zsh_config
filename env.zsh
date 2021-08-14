@@ -1,3 +1,2 @@
 export EDITOR=nvim
-export GOROOT=/usr/local/go
-export GOPATH=~/go
+export PATH=/usr/local/go/bin:$PATH
