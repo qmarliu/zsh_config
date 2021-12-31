@@ -39,9 +39,10 @@ EOPLUGINS
 fi
 
 # [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-[[ -s /home/liul/.autojump/etc/profile.d/autojump.sh ]] && source /home/liul/.autojump/etc/profile.d/autojump.sh
+[[ -s /home/liul/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
 # env of autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f /etc/profile.d/autojump.sh ] && . /etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
 
 
