@@ -7,5 +7,6 @@ source ~/.config/zsh/plugins.zsh
 bindkey -v
 source ~/.config/zsh/aliases.zsh
 source ~/.config/zsh/fzf.zsh
+source ~/.config/zsh/bindkeys.zsh
 ```
 
